@@ -1,6 +1,9 @@
 from parseWords import ReturnWords
 import random
 
+#initialize attempts var
+maxAttempts = 6
+
 #initialize an array of all possible words then randomly choose an index from that array 
 obj = ReturnWords()
 # dic:
@@ -29,7 +32,7 @@ for uniqChar in selectedWord:
 # 3) else - check for correct letters and correct positions and alert the user 
 
 attempts = 1
-while attempts < 7: 
+while attempts < maxAttempts+1: 
     output = "Attempt number " + str(attempts) + ": "
     guess = input(output).upper()
     if len(guess) != 5:
@@ -66,6 +69,6 @@ while attempts < 7:
         attempts+=1
 
 # if wrong tell the user the word 
-if attempts > 6 : 
+if attempts > maxAttempts : 
     print()
     print("The word was: " + selectedWord)

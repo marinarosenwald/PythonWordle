@@ -4,6 +4,8 @@ Making Wordle in Python
 I had a free minute this evening so I made Wordle in Python 
 I wanted to focus on trying to incorporate dictionaries 
 
+All code in this repository is original. Please reference me @marinarosenwald if your decide to use this code
+
 To run: 
 1) Clone respository
 2) Open respository/folder in commandline
